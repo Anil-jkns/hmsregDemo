@@ -1,0 +1,9 @@
+<suite name = "hmsreg">
+<test name = "hmsreg-result">
+<classes>
+<class name = "hmspctest.Testhmspc">
+
+</class>
+</classes>
+</test>
+</suite>

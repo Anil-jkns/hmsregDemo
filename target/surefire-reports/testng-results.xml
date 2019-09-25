@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="hmsreg" duration-ms="46911" started-at="2019-09-25T11:35:37Z" finished-at="2019-09-25T11:36:24Z">
+    <groups>
+    </groups>
+    <test name="hmsreg-result" duration-ms="46911" started-at="2019-09-25T11:35:37Z" finished-at="2019-09-25T11:36:24Z">
+      <class name="hmspctest.Testhmspc">
+        <test-method status="PASS" signature="f()[pri:0, instance:hmspctest.Testhmspc@71be98f5]" name="f" duration-ms="46859" started-at="2019-09-25T17:05:37Z" finished-at="2019-09-25T17:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- hmspctest.Testhmspc -->
+    </test> <!-- hmsreg-result -->
+  </suite> <!-- hmsreg -->
+</testng-results>

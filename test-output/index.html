@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-hmsreg">
+              <span class="suite-name border-failed">hmsreg</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-hmsreg">
+                    <span>E:\AnilWorkspace\hms\HMSreg.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-hmsreg">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-hmsreg">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-hmsreg">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-hmsreg">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-hmsreg">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-hmsreg">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-hmsreg" class="hide-methods failed suite-hmsreg"> (hide)</a> <!-- hide-methods failed suite-hmsreg -->
+                      <a href="#" panel-name="suite-hmsreg" class="show-methods failed suite-hmsreg"> (show)</a> <!-- show-methods failed suite-hmsreg -->
+                    </span>
+                    <div class="method-list-content failed suite-hmsreg">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-hmsreg" title="hmspctest.Testhmspc" hash-for-method="f">f</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-hmsreg -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-hmsreg" class="panel hmsreg">
+          <div class="suite-hmsreg-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">hmspctest.Testhmspc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f">
+                  </a> <!-- f -->
+                  <span class="method-name">f</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=77.0.3865.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TLPSYS11&apos;, ip: &apos;192.168.0.112&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x001A7C53+1473619]
+	Ordinal0 [0x0012AD71+961905]
+	Ordinal0 [0x000B42B3+475827]
+	Ordinal0 [0x000AC420+443424]
+	Ordinal0 [0x000ABA5C+440924]
+	Ordinal0 [0x000AB5F4+439796]
+	Ordinal0 [0x000AB5B5+439733]
+	Ordinal0 [0x000B2B15+469781]
+	Ordinal0 [0x000AB56C+439660]
+	Ordinal0 [0x000AC0C5+442565]
+	Ordinal0 [0x000ABA5C+440924]
+	Ordinal0 [0x000AB5F4+439796]
+	Ordinal0 [0x000AB5B5+439733]
+	Ordinal0 [0x000B146E+463982]
+	Ordinal0 [0x000AB56C+439660]
+	Ordinal0 [0x000AC0C5+442565]
+	Ordinal0 [0x000ABA5C+440924]
+	Ordinal0 [0x000AB5F4+439796]
+	Ordinal0 [0x000AB5B5+439733]
+	Ordinal0 [0x000AFC6B+457835]
+	Ordinal0 [0x000AB56C+439660]
+	Ordinal0 [0x000AC0C5+442565]
+	Ordinal0 [0x000ABA5C+440924]
+	Ordinal0 [0x000AB5F4+439796]
+	Ordinal0 [0x000AB5B5+439733]
+	Ordinal0 [0x000AF457+455767]
+	Ordinal0 [0x000AB56C+439660]
+	Ordinal0 [0x000AC0C5+442565]
+	Ordinal0 [0x000ABA5C+440924]
+	Ordinal0 [0x000AB5F4+439796]
+	Ordinal0 [0x000AB5B5+439733]
+	Ordinal0 [0x000A824C+426572]
+	Ordinal0 [0x000AB56C+439660]
+	Ordinal0 [0x000AB454+439380]
+	Ordinal0 [0x000B4F10+478992]
+	Ordinal0 [0x000698FE+170238]
+	Ordinal0 [0x00068D1D+167197]
+	Ordinal0 [0x0006742B+160811]
+	Ordinal0 [0x00050AE6+68326]
+	Ordinal0 [0x00051BF0+72688]
+	Ordinal0 [0x00051B89+72585]
+	Ordinal0 [0x00144B37+1067831]
+	GetHandleVerifier [0x00246845+506677]
+	GetHandleVerifier [0x002465E0+506064]
+	GetHandleVerifier [0x0024D188+533624]
+	GetHandleVerifier [0x0024701A+508682]
+	Ordinal0 [0x0013C226+1032742]
+	Ordinal0 [0x0013C09F+1032351]
+	Ordinal0 [0x00146A4B+1075787]
+	Ordinal0 [0x00146BB3+1076147]
+	Ordinal0 [0x00145B65+1071973]
+	BaseThreadInitThunk [0x755633CA+18]
+	RtlInitializeExceptionChain [0x77549ED2+99]
+	RtlInitializeExceptionChain [0x77549EA5+54]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at utlity.BaseClass.openbrowser(BaseClass.java:22)
+	at testcomponents.Hmspcreg.lunchbrowser(Hmspcreg.java:10)
+	at hmspctest.Testhmspc.f(Testhmspc.java:12)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-hmsreg-class-failed -->
+        </div> <!-- panel hmsreg -->
+        <div panel-name="test-xml-hmsreg" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\AnilWorkspace\hms\HMSreg.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;hmsreg&quot;&gt;
+  &lt;test name=&quot;hmsreg-result&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;hmspctest.Testhmspc&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- hmsreg-result --&gt;
+&lt;/suite&gt; &lt;!-- hmsreg --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-hmsreg" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for hmsreg</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">hmsreg-result (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-hmsreg" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for hmsreg</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-hmsreg" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for hmsreg</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_hmsreg');
+function tableData_hmsreg() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'f')
+data.setCell(0, 2, 'hmspctest.Testhmspc')
+data.setCell(0, 3, 9334);
+window.suiteTableData['hmsreg']= { tableData: data, tableDiv: 'times-div-hmsreg'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <div id="times-div-hmsreg">
+              </div> <!-- times-div-hmsreg -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-hmsreg" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for hmsreg</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-hmsreg" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-hmsreg" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">hmspctest.Testhmspc</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
